@@ -15,7 +15,8 @@ body {
   font-weight: 500;
   line-height: 30px;
   color: #444444;
-  background: #0D1014;
+  background: #0D1014 !important;
+  background-color: #0D1014 !important;
   overflow-x: hidden;
   /* width */
   /* Track */
