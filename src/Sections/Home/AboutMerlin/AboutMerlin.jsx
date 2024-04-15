@@ -16,7 +16,15 @@ const AboutMerlin = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="about-marlin-img">
-                            <img src="./assets/images/crypto-token/merlin.png" alt="img" />
+                            <div className="about-marlin-img-card about-marlin-img1">
+                                <img src="../assets/images/crypto-token/merlin1.gif" alt="img" />
+                            </div>
+                            <div className="about-marlin-img-card about-marlin-img2">
+                                <img src="../assets/images/crypto-token/merlin2.gif" alt="img" />
+                            </div>
+                            <div className='about-marlin-shape'>
+                                <img src="../assets/images/crypto-token/shape.png" alt="img" />
+                            </div>
                         </div>
                     </div>
                 </div>

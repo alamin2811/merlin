@@ -78,6 +78,8 @@ const Banner = () => {
                         </div>
                         <div className="banner-img">
                             <img src="./assets/images/crypto-token/banner-img.png" alt="img" />
+                            <img src="./assets/images/crypto-token/coin.gif" alt="img" className="coin-img" />
+
                         </div>
                         <div className="masd-grad">
                             <img src="./assets/images/crypto-token/mesh-grad.png" alt="img" />

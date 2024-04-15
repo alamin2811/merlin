@@ -97,9 +97,15 @@ const BannerStyle = styled.div`
 
 .banner-img{
     position: absolute;
-    right: 0px;
-    top: -30px;
+    right: -20px;
+    top: -110px;
     z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .coin-img{
+        position: absolute;
+    }
 }
 
 

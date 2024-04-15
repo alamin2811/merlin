@@ -154,6 +154,8 @@ const EcoSystemStyle = styled.div`
     margin: auto;
     margin-bottom: 72px;
     font-weight: 700;
+    font-family: Quantico;
+    text-transform: uppercase;
     img{
         transition: 0.3s;
         margin-left: 14px;

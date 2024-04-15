@@ -13,7 +13,7 @@ import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
-    <>
+    <div className='body-container'>
         <Header/>
         <Banner/>
         <BannerVideo/>
@@ -25,7 +25,7 @@ const Home = () => {
         <GetUpdates/>
         <TokenSocial/>
         <Footer/>
-    </>
+    </div>
   )
 }
 
