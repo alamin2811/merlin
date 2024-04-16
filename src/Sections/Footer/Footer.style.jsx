@@ -37,6 +37,9 @@ const FooterStyle = styled.div`
       font-style: normal;
       font-weight: 500;
       line-height: 26px;
+      a{
+        color: #FFF;
+      }
     }
     ul{
       list-style: none;
