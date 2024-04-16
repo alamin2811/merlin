@@ -30,19 +30,32 @@ const AboutMerlinStyle = styled.div`
             &.about-marlin-img1{
                 left: 0px;
                 top: 0px;
-                z-index: 1;
+                z-index: 0;
             }
             &.about-marlin-img2{
                 right: 0px;
                 top: 130px;
                 z-index: 2;
+                border-radius: 35px;
+                background: rgba(13, 16, 20, 0.50);
+                backdrop-filter: blur(5px);
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    margin: auto;
+                    border-radius: 30px;
+                }
             }
         }
         .about-marlin-shape{
             position: absolute;
             width: 150%;
-            top: -80px;
-            left: -28%;
+            top: -120px;
+            z-index: 1;
+            left: -26%;
             img{
                 transform: rotate(-16.905deg);
             }

@@ -87,8 +87,8 @@ const TokenPartnersStyle = styled.div`
         &:hover{
             .btn-outline{
                 opacity: 1;
-                animation: rotate360 5s linear infinite;
-                -webkit-animation: rotate360 5s linear infinite;
+                animation: rotate360 3s linear infinite;
+                -webkit-animation: rotate360 3s linear infinite;
             }
             .round{
                 /* display: block !important; */

@@ -11,7 +11,10 @@ const TokenSocial = () => {
                 <div key={index} className="crypto-social-link">
                   <a href={socialLink.url} target="_blank">
                     <div className="crypto-social-btn">
-                      <img src={socialLink.icon} alt="icon" />
+                      <div className="icon">
+                        <img src={socialLink.icon} alt="icon" />
+                        <img src={socialLink.icon} alt="icon" />
+                      </div>
                     </div>
                   </a>
                 </div>

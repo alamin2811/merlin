@@ -672,8 +672,45 @@ html.dark-scheme body h6 {
 }
 
 
+.mobile-logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+  background: #0D1014 !important;
+  padding: 15px 30px;
+  width: 320px;
+}
+.css-i4bv87-MuiSvgIcon-root{
+  color: #FFFFFF;
+}
+.css-1u2w381-MuiModal-root-MuiDrawer-root{
+  z-index: 9999;
+}
+.css-1g9f98u-MuiButtonBase-root-MuiIconButton-root{
+  top: 20px;
+  right: 20px;
+}
+.css-10hburv-MuiTypography-root{
+  color: #FFF;
+  font-family: Quantico;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 767px) {
   h1{
     font-size: 40px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    width: 100%;
   }
 }

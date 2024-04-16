@@ -77,8 +77,11 @@ const EcoSystem = () => {
           <p>
             The allocation of Merlin Tokens by Project Merlin is designed to ensure fair distribution and encourage active participation within the community. With a fixed maximum supply and a tendency to decrease, it adopts a deflationary structure secured through buyback and burn strategies. Maximum 52.30% of the total supply can be in circulation and this will decrease day by day, aiming for appreciation in value with each passing day.
           </p>
-          <a className="defi-launchapp-btn btn-hov-effect dark">
-            Whitepaper
+          <a className="defi-launchapp-btn home-banner-btn btn-hov-effect dark">
+            <span className="btn-inner">
+              <span className="btn-normal-text">Whitepaper</span>
+              <span className="btn-hover-text">Whitepaper</span>
+            </span>
             <img src='../assets/images/crypto-token/arrow-right-white.svg' alt="icon" />
             <span className="round-shape" />
           </a>

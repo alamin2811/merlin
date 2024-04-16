@@ -23,6 +23,28 @@ const TokenSocialStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30% 10%;
+    overflow: hidden;
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        transition: 0.4s;
+        height: 42px;
+        gap: 4px;
+        overflow: hidden;
+        img{
+            transition: 0.4s;
+        }
+    }
+    &:hover{
+        .icon{
+            img{
+                transform: translateY(-44px);
+            }
+        }
+    }
 }
 
 

@@ -87,8 +87,11 @@ const TokenPartners = () => {
           </ul>
         </div>
         <div>
-          <a className="become-investor-btn btn-hov-effect">
-            <span>Become an Investor</span>
+          <a className="become-investor-btn home-banner-btn btn-hov-effect">
+            <span className="btn-inner">
+              <span className="btn-normal-text">Become an Investor</span>
+              <span className="btn-hover-text">Become an Investor</span>
+            </span>
             <img src='../assets/images/crypto-token/arrow-right-tell.svg' alt="icon" />
             <span className="round-shape" />
           </a>

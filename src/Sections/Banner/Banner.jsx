@@ -75,7 +75,6 @@ const Banner = () => {
                                     <span className="btn-normal-text">Learn More</span>
                                     <span className="btn-hover-text">Learn More</span>
                                 </span>
-                                <span className="round-shape" />
                             </a>
                         </div>
                         <div className="banner-img">

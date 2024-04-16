@@ -107,6 +107,7 @@ overflow: hidden;
     justify-content: center;
     .coin-img{
         position: absolute;
+        transform: translateX(-30px) translateY(-15px);
     }
 }
 

@@ -80,8 +80,12 @@ const GetUpdates = () => {
             </div>
             <form className="get-updates-form">
               <input type="text" placeholder="Email address" />
-              <button type="submit">
-                Subscribe
+              <button type="submit" className="home-banner-btn btn-hov-effect">
+                <span className="btn-inner">
+                  <span className="btn-normal-text">Subscribe</span>
+                  <span className="btn-hover-text">Subscribe</span>
+                </span>
+                
               </button>
             </form>
           </div>

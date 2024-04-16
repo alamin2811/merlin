@@ -1010,10 +1010,6 @@ const HeaderStyleWrapper = styled.header`
     align-items: center;
     justify-content: center;
 }
-.mobile-menu-content{
-    background: #0D1014 !important;
-    padding: 15px 30px;
-}
 .mobile-menu-body{
     padding-top: 50px;
     

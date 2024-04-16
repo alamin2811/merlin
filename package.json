@@ -10,8 +10,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.5",
     "@iconify/icons-feather": "^1.2.3",
     "@iconify/react": "^4.1.1",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
     "apexcharts": "^3.37.1",
     "bootstrap": "^5.3.2",
     "date-fns": "^2.29.3",
