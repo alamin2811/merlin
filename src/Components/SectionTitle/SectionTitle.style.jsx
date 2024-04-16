@@ -8,7 +8,7 @@ const SectionTitleStyleWrapper = styled.div`
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 166.667% */
+    line-height: 166.667%;
     letter-spacing: 3.6px;
     text-transform: uppercase;
   }
@@ -18,8 +18,19 @@ const SectionTitleStyleWrapper = styled.div`
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: 80px; /* 133.333% */
+    line-height: 133.333%;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1199px){
+    .title{
+      font-size: 45px;
+    }
+  }
+  @media screen and (max-width: 991px){
+    .title{
+      font-size: 40px;
+    }
   }
 `;
 

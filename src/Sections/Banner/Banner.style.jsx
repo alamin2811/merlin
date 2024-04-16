@@ -48,6 +48,7 @@ const BannerStyle = styled.div`
 
     .overlay {
         background: url(../assets/images/crypto-token/grain-texture.png);
+        
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -69,7 +70,7 @@ const BannerStyle = styled.div`
         width: 100%;
         bottom: 0px;
         position: absolute;
-        background: linear-gradient(180deg, rgba(13, 16, 20, 0) 0%, rgba(13, 16, 20, 0.762195) 65.1%, #0D1014 85.42%);
+        background: linear-gradient(180deg, rgba(13, 16, 20, 0.00) 0%, rgba(13, 16, 20, 0.76) 33%, #0D1014 85.42%);
     }
 }
 
@@ -304,8 +305,17 @@ const BannerStyle = styled.div`
 }
 @media screen and (max-width: 1199px){
     .home-banner-text {
+        max-width: 530px;
         h1{
-            font-size: 80px;
+            font-size: 60px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .banner-card, .banner-card2 {
+        h2{
+            font-size: 30px;
         }
     }
     .number-diy {
@@ -329,23 +339,15 @@ const BannerStyle = styled.div`
     }
     .banner-card{
         margin-bottom: 30px;
-    }
-    .home-banner-text {
-        h1{
-            font-size: 60px;
+        p{
+            line-height: 50px;
         }
     }
     .banner-img{
         max-width: 300px;
         top: 0px;
-    }
-    .banner-video-section{
-        padding-top: 0px;
-    }
-    .banner-video-card {
-        height: 320px;
-        h2 {
-            font-size: 45px;
+        .coin-img{
+            max-width: 140px;
         }
     }
 }

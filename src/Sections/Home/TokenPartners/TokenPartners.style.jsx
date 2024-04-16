@@ -145,6 +145,7 @@ const TokenPartnersStyle = styled.div`
 
 
 @media screen and (max-width: 1199px){
+        margin-bottom: 0px;
         .partners-title{
             font-size: 45px;
             margin-bottom: 40px;
@@ -157,6 +158,11 @@ const TokenPartnersStyle = styled.div`
     
 }
 @media screen and (max-width: 991px){
+    padding-bottom: 100px;
+        .partners-title{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
         .partners-list {
             ul {
                 margin: 0px;
@@ -165,14 +171,18 @@ const TokenPartnersStyle = styled.div`
                 }
             }
         }
-        margin-bottom: 100px;
 }
 
 @media screen and (max-width: 767px){
+    padding-top: 20px;
         .partners-title{
             font-size: 40px;
         }
-        margin-bottom: 80px;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+        .become-investor-btn{
+            margin-top: 20px;
+        }
         .partners-list {
             ul{
                 li{

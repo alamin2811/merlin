@@ -315,55 +315,12 @@ padding-top: 50px;
 }
 
 @media screen and (max-width: 1199px){
-    .home-banner-text {
-        h1{
-            font-size: 80px;
-        }
-    }
-    .banner-card {
-        padding: 25px 30px;
-        h2{
-            font-size: 30px;
-        }
-        &2{
-            padding: 15px 30px;
-            h2{
-                font-size: 30px;
-            }
-        }
-    }
-    .number-diy {
-        .data {
-            font-size: 30px !important;
-            div{
-                width: 20px !important;
-                span{
-                    width: 20px !important;
-                }
-            }
-        }
+    .banner-video-card{
+        height: 430px;
     }
 }
 @media screen and (max-width: 991px){
     padding-top: 0px;
-    .home-banner-inner {
-        .overlay{
-            padding-top: 180px;
-            padding-bottom: 70px;
-        }
-    }
-    .home-banner-text {
-        h1{
-            font-size: 60px;
-        }
-    }
-    .banner-img{
-        max-width: 300px;
-        top: 0px;
-    }
-    .banner-card{
-        margin-bottom: 30px;
-    }
     .banner-video-card {
         height: 320px;
         h2 {

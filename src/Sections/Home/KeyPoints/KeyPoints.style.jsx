@@ -86,7 +86,7 @@ const KeyPointsStyleWrapper = styled.div`
         padding: 90px 0px 60px 0px;
 }
 @media screen and (max-width: 767px){
-        padding: 70px 0px 40px 0px;
+        padding: 70px 0px 0px 0px;
 }
 @media screen and (max-width: 425px){
     .key-points-card{

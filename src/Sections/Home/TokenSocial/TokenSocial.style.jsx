@@ -57,7 +57,7 @@ const TokenSocialStyle = styled.div`
     
 }
 @media screen and (max-width: 767px){
-        padding: 80px 0px;
+        padding: 40px 0px;
     .crypto-social-list{
         flex-wrap: wrap;
         .crypto-social-link {
@@ -70,7 +70,7 @@ const TokenSocialStyle = styled.div`
     }
 }
 @media screen and (max-width: 575px){       
-        padding: 80px 0px 50px 0px;
+        padding: 10px 0px;
     .crypto-social-list {
         .crypto-social-link{
             width: 33.33%;

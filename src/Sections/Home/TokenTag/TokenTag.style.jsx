@@ -51,7 +51,7 @@ const TokenTagStyle = styled.div`
 
 
 @media screen and (max-width: 991px){
-        padding: 100px 0px;
+        padding: 0px 0px 80px 0px;
     .crypto-token-tag-list {
         .tag{
             padding: 0px 18px;
@@ -61,7 +61,7 @@ const TokenTagStyle = styled.div`
 }
 
 @media screen and (max-width: 767px){
-        padding: 80px 0px;
+        padding: 60px 0px;
 }
 
 

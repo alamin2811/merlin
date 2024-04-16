@@ -95,7 +95,8 @@ const FooterStyle = styled.div`
     .text {
         font-family: "Quantico", sans-serif;
         font-weight: 700;
-        font-size: 94px;
+        font-size: 97px;
+        text-align: justify;
         line-height: 120px;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -109,6 +110,59 @@ const FooterStyle = styled.div`
     }
 }
 
+@media screen and (max-width: 1199px){
+  .token-footer-bottom-text {
+    padding: 10px 0px;
+    .text{
+      font-size: 80px;
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  .footer-copyright-section{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .token-footer-bottom-text {
+    padding: 0px;
+    .text{
+      font-size: 60px;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  h5{
+    margin: 30px 0px;
+  }
+  .token-footer-bottom-text {
+    .text{
+      font-size: 44px;
+      line-height: 80px;
+    }
+  }
+}
+@media screen and (max-width: 575px){
+  .footer-copyright-section{
+    h6{
+      text-align: center;
+    }
+    ul{
+      justify-content: center;
+    }
+  }
+  .token-footer-bottom-text {
+    .text{
+      font-size: 39px;
+    }
+  }
+}
+@media screen and (max-width: 480px){
+  .token-footer-bottom-text {
+    .text{
+      font-size: 30px;
+    }
+  }
+}
 
 `;
 

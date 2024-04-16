@@ -108,6 +108,19 @@ const GetUpdatesStyle = styled.div`
         }
     }
 }
+@media screen and (max-width: 991px){
+    padding: 40px 0px;
+}
+@media screen and (max-width: 768px){
+    padding: 20px 0px;
+}
+@media screen and (max-width: 575px){
+    .get-updates-form {
+        button{
+            font-size: 15px;
+        }
+    }
+}
 
 `; 
 

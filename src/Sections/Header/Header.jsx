@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderStyleWrapper from './Header.style'
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
     return (
@@ -13,10 +14,7 @@ const Header = () => {
                                     <a className="navbar-brand header-logo" href="index.html">
                                         <img src="../assets/images/logo/logo.svg" alt="header-logo" />
                                     </a>
-                                    <div
-                                        className="collapse navbar-collapse header-navbar-content"
-                                        id="navbarSupportedContent"
-                                    >
+                                    <div className="collapse navbar-collapse header-navbar-content" id="navbarSupportedContent" >
                                         <ul className="navbar-nav main-menu">
                                             <li className="nav-item">
                                                 <a className="nav-link" href="#">
@@ -61,6 +59,7 @@ const Header = () => {
                                             </li>
                                         </ul>
                                     </div>
+                                    <MobileMenu/>
                                 </div>
                             </nav>
                         </div>

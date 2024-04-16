@@ -49,6 +49,38 @@ const AboutMerlinStyle = styled.div`
         }
     }
 
+    @media screen and (max-width: 1199px){
+        .about-marlin-text {
+            p{
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px){
+        padding-top: 80px;
+        .about-marlin-img {
+            .about-marlin-img-card{
+                max-width: 200px;
+                max-height: 200px;
+                min-width: 200px;
+                min-height: 200px;
+                &.about-marlin-img1{
+                    top: 40px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        padding-top: 50px;
+        .about-marlin-img{
+            height: 300px;
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+    }
 `;
 
 export default AboutMerlinStyle;

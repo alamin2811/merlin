@@ -909,90 +909,6 @@ const HeaderStyleWrapper = styled.header`
     }
   }
 
-  .submenu-has-submenu {
-    position: relative;
-    &::after {
-      content: ">";
-      font-size: 22px;
-      position: absolute;
-      right: 0px;
-      top: 11px;
-      transition: 0.3s;
-      transform: rotate(0deg);
-      color: #999999;
-    }
-    .submenu-box2 {
-      position: absolute;
-      transform-origin: 50% -30px;
-      z-index: 100;
-      opacity: 0;
-      display: none;
-      transform: rotateX(-15deg) translateZ(0px);
-      top: -20px;
-      left: 180px;
-      transition: 0.5s;
-      padding: 40px;
-    }
-    .submenu-submenu {
-      list-style: none;
-      margin: 0px;
-      width: 250px;
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
-      border-radius: 15px;
-      padding: 13px 24px;
-      li {
-        line-height: 35px;
-      }
-    }
-    &:hover {
-      .submenu-box2 {
-        animation: menuAnimetion 0.7s;
-        display: block;
-        transform: none;
-        opacity: 1;
-      }
-      &::after {
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  .v6-header-content {
-    backdrop-filter: none !important;
-    .mobile-menu {
-      .navbar-toggler {
-        img {
-          filter: brightness(100);
-        }
-      }
-    }
-  }
-
-  .sticky {
-    .v6-header-content {
-      .mobile-menu {
-        .navbar-toggler {
-          img {
-            filter: brightness(0);
-          }
-        }
-      }
-    }
-    &.defi {
-      .v6-header-content {
-        .mobile-menu {
-          .navbar-toggler {
-            img {
-              filter: brightness(100) !important;
-            }
-          }
-        }
-      }
-    }
-  }
-
   .mobile-menu {
     display: none;
     .navbar-toggler {
@@ -1034,10 +950,25 @@ const HeaderStyleWrapper = styled.header`
   }
 
   .mobile-menu-body {
-    background: #ffffff;
-    height: 100vh;
-    width: 400px !important;
-    padding: 10px 30px;
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      li{
+        margin-bottom: 30px;
+        .menu-link{
+          color: #FFF;
+          text-align: right;
+          text-decoration: none;
+          font-family: Quantico;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
     .offcanvas-header {
       .btn-close {
         background: none;
@@ -1054,637 +985,40 @@ const HeaderStyleWrapper = styled.header`
       text-align: center;
       padding-right: 0px !important;
     }
-    .mobile-menu-logo {
-      min-width: 150px;
-    }
     .offcanvas-body {
       overflow-x: hidden;
       padding-top: 20px;
     }
-    .mobile-navbar-menu {
-      .nav-menu {
-        width: 100% !important;
-        li {
-          .hash-has-sub {
-            span {
-              top: -10px !important;
-            }
-            a {
-              border: none !important;
-            }
-          }
-        }
-      }
-    }
   }
 
-  body.dark-scheme,
-  html.dark-scheme body,
-  .dark {
-    .navbar-toggler {
-      img {
-        filter: brightness(100);
-      }
-    }
-    .mobile-menu-body {
-      background: #181d22;
-    }
-    .light-logo {
-      display: block;
-    }
-    .dark-logo {
-      display: none;
-    }
-    .mobile-navbar-menu {
-      .nav-menu li {
-        a {
-          color: #ffffff;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .mobile-menu{
+    display: none;
+    .btn-close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            opacity: 1;
         }
-        .hash-has-sub {
-          a {
-            border: none !important;
-          }
-        }
-      }
-      a {
-        color: #ffffff;
-      }
-      .connect-btn {
-        color: #ffffff;
-        img {
-          filter: brightness(100);
-        }
-      }
-      .js-go-light {
-        filter: brightness(100);
-      }
-      .sign-in-btn {
-        span {
-          color: #ffffff;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 991px) {
-    .mobile-menu {
-      display: block;
-    }
-  }
-  // @media only screen and (max-width: 768px){
-  //     .mobile-menu-body{
-  //         width: 80% !important;
-  //     }
-  // }
-  // @media only screen and (max-width: 575px){
-  //     .mobile-menu-body{
-  //         padding: 10px 30px;
-  //         width: 90% !important;
-  //     }
-  // }
-  @media only screen and (max-width: 480px) {
-    .mobile-menu-body {
-      padding: 10px 15px;
-      width: 100% !important;
-    }
-    .mobile-navbar-menu .nav-buttons {
-      padding-right: 0px !important;
-      padding-left: 0px !important;
-    }
-  }
-
-  /* .nft-header-section{
-    padding: 20px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: #ffffff;
-    position: relative;
-    z-index: 1111;
-    .header-blur-img{
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        text-align: center;
-        z-index: 0;
-        height: 100%;
-        img{
-            height: 100%;
-        }
-    }
-    .mega-menu{
-        top: 38px;
-        .mega-menu-img{
-            max-width: 80%;
-            margin: auto;
-        }
-    }
-    &.sticky{
-        padding: 15px 0px !important;
     }
 }
-.nft-header-content{
+.mobile-menu-btn{
+    background: transparent;
+    border: none;
+    outline: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
+    justify-content: center;
 }
-.nft-header-left{
-    .header-logo{
-        .nft-logo-light{
-            display: none;
-        }
-        .nft-logo-dark{
-            display: block;
-        }
-    }
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 84px;
-    form{
-        width: 470px;
-        height: 45px;
-        background: rgba(0, 0, 0, 0.08);
-        border-radius: 25px;
-        padding: 14px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        input{
-            overflow: hidden;
-            max-width: 420px;
-            margin-left: 14.5px;
-            width: 100%;
-            background: transparent;
-            overflow: hidden;
-            border: none;
-            outline: none;
-            font-size: 15px;
-            line-height: 19.3px;
-            font-weight: 500;
-            color: #999999;
-        }
-    }
+.mobile-menu-content{
+    background: #0D1014 !important;
+    padding: 15px 30px;
 }
-
-.search-form-phn{
-    max-width: 100%;
-    padding: 0px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 16px;
-    margin-top: 20px;
-    form{
-        width: 100% !important;
-        height: 45px;
-        background: rgba(0, 0, 0, 0.08);
-        border-radius: 25px;
-        padding: 14px 20px;
-        display: flex !important;
-        align-items: center;
-        justify-content: space-between;
-        input{
-            overflow: hidden;
-            max-width: 100%;
-            margin-left: 14.5px;
-            width: 100%;
-            font-size: 15px;
-            font-weight: 500;
-            background: transparent;
-            overflow: hidden;
-            border: none;
-            outline: none;
-            font-weight: 600;
-            color: #999999;
-        }
-    }
+.mobile-menu-body{
+    padding-top: 50px;
+    
 }
-
-.nft-header-right{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 46px;
-    .nft-menu{
-        list-style: none;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 46px;
-        margin-bottom: 0px;
-        .nav-item{
-            a{
-                color: #444444;
-                transition: 0.3s;
-                font-weight: 500;
-                &:hover{
-                    color: #111111;
-                }
-            }
-            
-        }
-    }
-    .nft-header-bnts{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 30px;
-        .signin-btn{
-            &:hover{
-                color: #111111;
-            }
-        }
-        .connect-btn{
-            background: #5F5FFF;
-            border-radius: 25px;
-            padding: 13.5px 20px;
-            color: #ffffff;
-            line-height: 16px;
-            font-weight: 700;
-            transition: 0.3s;
-            img{
-                margin-right: 13px;
-                transition: 0.3s;
-            }
-        }
-        .dark-mood-btn{
-            transition: 0.3s;
-            .js-go-dark{
-                transition: 0.3s;
-                &:hover{
-                    filter: brightness(0%);
-                }
-            }
-            .js-go-light{
-                transition: 0.3s;
-                display: none;
-                filter: brightness(100);
-                &:hover{
-                    filter: brightness(100);
-                    opacity: 0.7;
-                }
-            }
-        }
-    }
-    .has-submenu {
-        position: relative;
-        .submenu-box{
-            position: absolute;
-            transform-origin: 50% -30px;
-            z-index: 100;
-            opacity: 0;
-            display: none;
-            transform: rotateX(-15deg) translateZ(0px);
-            top: 20px;
-            left: -40px;
-            transition: 0.5s;
-            padding: 40px;
-        }
-        .submenu {
-            list-style: none;
-            margin: 0px;
-            width: 250px;
-            background: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
-            border-radius: 10px;
-            padding: 13px 24px;
-            li{
-                line-height: 333%;
-                &.nft-has-submenu{
-                    &::after{
-                        top: 1px;
-                    }
-                }
-            }
-        }
-        &:hover {
-            .submenu-box{
-                animation: menuAnimetion 0.7s;
-                display: block;
-                transform: none;
-                opacity: 1;
-            }
-        }
-    }
-} */
-
-  /*-- Deark Mood --*/
-  /* body.dark-scheme,
-html.dark-scheme body{
-    .nft-header-section{
-        background: #181D22;
-    }
-    
-    .nft-header-left {
-        .header-logo{
-            .nft-logo-dark{
-                display: none;
-            }
-            .nft-logo-light{
-                display: block;
-            }
-        }
-        form{
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-        }
-    }
-    .nft-header-right {
-        .nft-header-bnts{
-            .signin-btn{
-                color: #999999;
-            }
-        }
-        .nft-menu {
-            .nav-item {
-                a{
-                    color: #999999;
-                    &:hover{
-                        color: #ffffff;
-                    }
-                }
-            }
-        }
-        .has-submenu{
-            .submenu {
-                background: #181D22;
-                backdrop-filter: blur(10px);
-            }
-            .nft-submenu{
-                background: #181D22;
-                backdrop-filter: blur(10px);
-            }
-        }
-    }
-
-        .mega-menu-card {
-            background: #20252B;
-    
-            .mega-menu-column {
-                border-color: rgba(255, 255, 255, 0.1);
-                background: #20252B;
-    
-                &:nth-last-child(1) {
-                    border: none;
-                    background: #2B3036;
-    
-                    &::after {
-                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 100%);
-                    }
-    
-                    &::before {
-                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
-                    }
-                }
-    
-                h5 {
-                    color: #ffffff;
-                }
-            }
-    
-            .more-demo-card {
-                background: #2B3036;
-    
-                p {
-                    color: #ffffff;
-                }
-    
-                &::after {
-                    background: linear-gradient(180deg, rgba(255, 183, 202, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-                }
-    
-                img {
-                    position: absolute;
-                    top: 21px;
-                    right: 20px;
-                    filter: brightness(0.35);
-                }
-    
-            }
-    
-            &:hover {
-                .mega-menu-list {
-                    li {
-                        a {
-                            opacity: 80%;
-                        }
-                    }
-                }
-            }
-    
-            .mega-menu-list {
-                li {
-                    a {
-                        color: #ffffff !important;
-    
-                        &.disable {
-                            opacity: 100%;
-                        }
-                    }
-    
-                    &.menuTabActive {
-                        a {
-                            &:hover {
-                                color: #ffffff !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-} */
-
-  .header-top {
-    background: url(../images/bg/top-header-bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 111;
-    .header-top-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 35px;
-      .header-top-timer {
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          max-width: 228px;
-          width: 100%;
-          gap: 30px;
-          li {
-            color: #ffffff;
-            span {
-              margin-left: 4px;
-            }
-          }
-        }
-      }
-      .header-top-right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 15px;
-      }
-      p {
-        margin-bottom: 0;
-        color: #ffffff;
-      }
-    }
-  }
-  .nav-expanded .staco-home3-canva {
-    margin-top: 90px;
-  }
-
-  /*-- language drpdown --*/
-  .language-dropdown {
-    position: relative;
-    max-width: 100px;
-    .language-dropdown-box {
-      position: absolute;
-      transform-origin: 50% -30px;
-      z-index: 100;
-      opacity: 0;
-      display: none;
-      transform: rotateX(-15deg) translateZ(0px);
-      top: 30px;
-      left: -40px;
-      transition: 0.5s;
-      padding: 40px;
-    }
-    &.open {
-      .language-dropdown-box {
-        animation: menuAnimetion 0.7s;
-        display: block;
-        transform: none;
-        opacity: 1;
-      }
-    }
-    &:hover {
-      .language-dropdown-box {
-        animation: menuAnimetion 0.7s;
-        display: block;
-        transform: none;
-        opacity: 1;
-      }
-    }
-
-    button {
-      background: transparent;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50px;
-      width: 100px;
-      height: 50px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 20px;
-      padding: 10px 14px;
-      color: #111111;
-      position: relative;
-      &::after {
-        content: url(../images/icons/dropdown-toggle.svg);
-        position: absolute;
-        top: 12px;
-        right: 11px;
-        opacity: 0.4;
-      }
-      img {
-        width: 21px;
-        height: 21px;
-        border-radius: 50%;
-        margin-right: 7.5px;
-      }
-    }
-
-    .list {
-      top: 100%;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-      margin-top: 10px;
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
-      padding: 10px 0;
-      border-radius: 15px;
-      width: 200px;
-      height: auto;
-      right: 0;
-      left: unset;
-      top: 130%;
-      list-style: none;
-      margin: 0px;
-      padding: 28px 30px 30px 30px;
-    }
-
-    .list-item {
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 18px;
-      color: #444444;
-      line-height: 333%;
-
-      &:hover {
-        color: #111111;
-        background-color: transparent;
-      }
-      .select {
-        display: none;
-      }
-    }
-
-    &.finance {
-      button {
-        background: transparent;
-        border: 1px solid #ffffff30;
-        color: #ffffff;
-        position: relative;
-
-        &::after {
-          content: url(../images/icons/dropdown-toggle.svg);
-          position: absolute;
-          top: 12px;
-          right: 11px;
-          opacity: 1;
-          filter: brightness(100);
-        }
-
-        img {
-          width: 21px;
-          height: 21px;
-          border-radius: 50%;
-          margin-right: 7.5px;
-          filter: brightness(100);
-        }
-      }
-    }
-  }
-
-  /* responsive style start  */
-
-  @media screen and (max-width: 1850px) {
-  }
-  @media screen and (max-width: 1699px) {
-  }
-  @media screen and (max-width: 1600px) {
-  }
-  @media screen and (max-width: 1499px) {
-  }
+  
   @media screen and (max-width: 1399px) {
     .header-extra {
       gap: 20px;
@@ -1735,31 +1069,14 @@ html.dark-scheme body{
     .main-menu {
       gap: 25px;
     }
-    .corporate-header {
-      .main-menu {
-        gap: 10px;
-      }
-      .header-extra {
-        gap: 18px;
-      }
-      &.header-section {
-        .header-navbar-container {
-          gap: 30px;
-        }
-        .header-navbar-content {
-          gap: 20px;
-        }
-      }
-    }
-    .language-dropdown {
-      button {
-        font-size: 13px;
-        width: 90px;
-        height: 44px;
-      }
-    }
   }
   @media screen and (max-width: 991px) {
+    .mobile-menu {
+      display: flex;
+      align-items: c;
+      justify-content: center;
+
+    }
     .header-navbar-content {
       position: fixed;
       top: 0;
@@ -2038,6 +1355,9 @@ html.dark-scheme body{
       }
     }
   }
+  
+
+
   @media screen and (min-width: 768px) and (max-width: 991px) {
   }
   @media screen and (max-width: 767px) {
@@ -2058,15 +1378,12 @@ html.dark-scheme body{
       }
     }
   }
-  @media screen and (max-width: 575px) {
-  }
-  @media screen and (max-width: 480px) {
-  }
-  @media screen and (max-width: 425px) {
-  }
-  @media screen and (max-width: 375px) {
-  }
-  @media screen and (min-width: 768px) {
+
+  @media only screen and (max-width: 480px) {
+    .mobile-menu-content {
+      padding: 10px 15px;
+      width: 100% !important;
+    }
   }
 `;
 

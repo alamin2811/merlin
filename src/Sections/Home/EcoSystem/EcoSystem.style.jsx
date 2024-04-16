@@ -173,8 +173,10 @@ const EcoSystemStyle = styled.div`
         max-width: 755px;
     }
 }
-@media screen and (min-width: 991px) and (max-width: 1200px) {}
 @media screen and (max-width: 991px){
+    p{
+        font-size: 14px; 
+    }
     .ecosystem-text {
         ul{
             li{
@@ -269,6 +271,11 @@ const EcoSystemStyle = styled.div`
         }
         &::before{
             bottom: 140px;
+        }
+        .ecosystem-content {
+            .logo-icon{
+                bottom: 4%;
+            }
         }
 }
 @media screen and (max-width: 425px){}
