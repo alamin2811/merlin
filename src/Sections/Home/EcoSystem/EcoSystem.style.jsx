@@ -188,7 +188,6 @@ const EcoSystemStyle = styled.div`
         max-width: 560px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {}
 @media screen and (max-width: 767px){
         padding-top: 50px;
         p{
@@ -199,6 +198,8 @@ const EcoSystemStyle = styled.div`
         ul{
             flex-wrap: wrap;
             justify-content: center;
+            margin: 0px -30px;
+            margin-bottom: 40px;
             li{
                 width: 50%;
                 line-height: 20px;
@@ -256,14 +257,20 @@ const EcoSystemStyle = styled.div`
 }
 @media screen and (max-width: 575px){
     /*-- defi index start --*/
-    .ecosystem-text ul li{
+    .ecosystem-text ul{
+        margin: 0px -20px;
+        margin-bottom: 40px;
+        li{
         &:nth-child(3){
-            padding-left: 30px;
+            padding: 0px;
+            padding-left: 17px;
         }
         &:nth-child(4){
-            padding-right: 30px;
+            padding: 0px;
+            padding-right: 17px;
         }
     }
+    } 
 }
 @media screen and (max-width: 480px){
         &::after{
@@ -278,18 +285,11 @@ const EcoSystemStyle = styled.div`
             }
         }
 }
-@media screen and (max-width: 425px){}
 @media screen and (max-width: 375px){
     .ecosystem-text ul li{
-        &:nth-child(3){
-            padding: 0px 15px;
-        }
-        &:nth-child(4){
-            padding: 0px 15px;
-        }
+        
     }
 }
-@media screen and (min-width: 768px){}
 
 `;
 

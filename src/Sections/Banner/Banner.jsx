@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BannerStyle from './Banner.style';
+import BannerBgAnimetion from './BannerBgAnimetion';
 
 
 const Banner = () => {
@@ -60,6 +61,7 @@ const Banner = () => {
             </div>
             <div className="home-banner-inner">
                 <div className="overlay">
+                    <BannerBgAnimetion/>
                     <div className="container">
                         <div className="home-banner-text">
                             <h1 className="quantico" data-splitting="">
