@@ -680,27 +680,27 @@ html.dark-scheme body h6 {
 }
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
   background: #0D1014 !important;
-  padding: 15px 30px;
-  width: 320px;
+  padding: 15px 30px !important;
+  width: 320px !important;
 }
 .css-i4bv87-MuiSvgIcon-root{
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .css-1u2w381-MuiModal-root-MuiDrawer-root{
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 .css-1g9f98u-MuiButtonBase-root-MuiIconButton-root{
-  top: 20px;
-  right: 20px;
+  top: 20px !important;
+  right: 20px !important;
 }
 .css-10hburv-MuiTypography-root{
-  color: #FFF;
-  font-family: Quantico;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  color: #FFF !important;
+  font-family: Quantico !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  text-transform: uppercase !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -711,6 +711,6 @@ html.dark-scheme body h6 {
 
 @media screen and (max-width: 480px) {
   .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
-    width: 100%;
+    width: 100% !important;
   }
 }
