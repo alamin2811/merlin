@@ -69,7 +69,9 @@ const FaqSection = () => {
                                 </h2>
                                 {accordion.isOpen && (
                                     <div className="ac-panel">
-                                        <p className="ac-text">{accordion.content}<br/><br/>{accordion.content2}<br/><br/>{accordion.content3}</p>
+                                        <p className="ac-text">{accordion.content}</p>
+                                        <p className="ac-text">{accordion.content2}</p>
+                                        <p className="ac-text">{accordion.content3}</p>
                                     </div>
                                 )}
                             </div>

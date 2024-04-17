@@ -65,7 +65,7 @@ margin-top: -220px;
         font-family: Lexend;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
       }
     }
@@ -196,14 +196,14 @@ margin-top: -220px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 30px;
     li{
       a{
         color: #FFF;
         font-family: Lexend;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
       }
     }

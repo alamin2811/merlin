@@ -108,7 +108,8 @@ overflow: hidden;
     max-width: 1000px;
     .coin-img{
         position: absolute;
-        transform: translateX(-30px) translateY(-15px);
+        transform: translateX(-30px) translateY(15px);
+        max-width: 220px;
     }
 }
 

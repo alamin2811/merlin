@@ -48,6 +48,7 @@ const EcoSystemStyle = styled.div`
             font-size: 18px;
             padding: 0px 12px;
             text-align: center;
+            font-weight: 500 !important;
             margin-bottom: 13px;
             color: #ffffff;
             line-height: 30px;
