@@ -8,7 +8,7 @@ import { keyPointsData } from 'public/assets/data/CryptoTokenData/KeypointData';
 const KeyPoints = () => {
   return (
     <KeyPointsStyleWrapper className="key-points-section">
-      <div className="container">
+      <div className="container custom-container">
         <div className="row">
           {keyPointsData.map((keyPoint, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-5">

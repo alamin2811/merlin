@@ -79,7 +79,7 @@ overflow: hidden;
     margin-bottom: 120px;
     position: relative;
     z-index: 1;
-    max-width: 706px;
+    max-width: 800px;
     width: 100%;
     h1{
         font-size: 80px;
@@ -99,12 +99,13 @@ overflow: hidden;
 
 .banner-img{
     position: absolute;
-    right: -20px;
-    top: -110px;
+    right: -14%;
+    top: -32%;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
     .coin-img{
         position: absolute;
         transform: translateX(-30px) translateY(-15px);

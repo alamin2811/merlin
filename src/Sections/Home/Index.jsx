@@ -10,6 +10,7 @@ import EcoSystem from './EcoSystem/EcoSystem'
 import GetUpdates from './GetUpdates/GetUpdates'
 import TokenSocial from './TokenSocial/TokenSocial'
 import Footer from '../Footer/Footer'
+import FaqSection from './Faq/Faq'
 
 const Home = () => {
   return (
@@ -21,9 +22,8 @@ const Home = () => {
         <KeyPoints/>
         <TokenTag/>
         <TokenPartners/>
+        <FaqSection/>
         <EcoSystem/>
-        <GetUpdates/>
-        <TokenSocial/>
         <Footer/>
     </div>
   )

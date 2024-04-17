@@ -48,7 +48,7 @@ const Banner = () => {
     }, [transactions, marketCap, activeAccounts, stakedPercentage]);
 
     return (
-        <BannerStyle className="home-banner">
+        <BannerStyle className="home-banner" id="home">
             <div className="home-banner-shape">
                 <div className="ractangle" />
                 <div className="ractangle" />
@@ -62,7 +62,7 @@ const Banner = () => {
             <div className="home-banner-inner">
                 <div className="overlay">
                     <BannerBgAnimetion/>
-                    <div className="container">
+                    <div className="container custom-container">
                         <div className="home-banner-text">
                             <h1 className="quantico" data-splitting="">
                                 Make Dreams into the Future
@@ -78,7 +78,7 @@ const Banner = () => {
                             </a>
                         </div>
                         <div className="banner-img">
-                            <img src="./assets/images/crypto-token/banner-img.png" alt="img" />
+                            <img src="./assets/images/crypto-token/banner-img.webp" alt="img" />
                             <img src="./assets/images/crypto-token/coin.gif" alt="img" className="coin-img" />
 
                         </div>

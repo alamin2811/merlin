@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const EcoSystemStyle = styled.div`
     position: relative;
-    &::before{
+    /* &::before{
         content: '';
         position: absolute;
         height: 2px;
@@ -22,7 +22,7 @@ const EcoSystemStyle = styled.div`
         left: 0px;
         background: rgba(13, 16, 20, 0.7);
         backdrop-filter: blur(40px);
-    }
+    } */
     p{
         font-size: 16px;
         line-height: 200%;
@@ -75,7 +75,7 @@ const EcoSystemStyle = styled.div`
     flex-direction: column;
     .logo-icon{
         position: absolute;
-        z-index: 5;
+        z-index: 10;
         bottom: 12%;
     }
     .globe-img{

@@ -38,39 +38,64 @@ const Footer = () => {
     }, []);
     return (
         <FooterStyle className='footer-section'>
-            <div className="footer-bg-img">
-                <img src="../assets/images/crypto-token/bg_footer.png" alt="img" />
-            </div>
-            <div className="container">
-                <h5>Say hello to: <a href="mailto:info@projectmerlin.com">info@projectmerlin.com</a></h5>
-                <div className="footer-copyright-section">
-                    <h6>Copyright © 2024 Project <a href="#">Merlin</a>, All rights reserved.</h6>
-                    <ul>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Cookies</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-                <div className="token-footer-bottom-text">
-                    <div className="text">
-                        <span>Dec</span>
-                        <span className="top">e</span>
-                        <span>n</span>
-                        <span className="top">t</span>
-                        <span>ra</span>
-                        <span className="top">l</span>
-                        <span>ize D</span>
-                        <span className="top">r</span>
-                        <span>ea</span>
-                        <span className="top">m</span>
-                        <span>s</span>
+            <div className="contianer custom-container">
+                <div className="footer-content">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="footer-left">
+                                <h3>Project Merlin</h3>
+                                <p>Project Merlin is a next-generation crowdfunding DAO ecosystem. Our community supports the production of values that benefit the ecosystem, while also earning rewards through a unique vote2earn mechanism.</p>
+                                <ul>
+                                    <li><a href="#"><img src="./assets/images/icons/telegram.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/in.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/discord.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/x.svg" alt="icon" /></a></li>
+                                </ul>
+                                <ol>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookies Policy</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="footer-center">
+                                <a href="#" className='join-discord-btn home-banner-btn btn-hov-effect'>
+                                    <span className="btn-inner">
+                                        <span className="btn-normal-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
+                                        <span className="btn-hover-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
+                                    </span>
+                                </a>
+                                <a href="#" className="back-to-top">
+                                    Back to top <img src="../assets/images/icons/back-top-icon.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="footer-right">
+                                <h4>Stay connected & Get Updates</h4>
+                                <p>Sign up with your email address to receive news and updates</p>
+                                <form>
+                                    <input type="email" placeholder="Email address" />
+                                    <button className="home-banner-btn btn-hov-effect">
+                                        <span className="btn-inner">
+                                            <span className="btn-normal-text">Subscribe</span>
+                                            <span className="btn-hover-text">Subscribe</span>
+                                        </span>
+                                    </button>
+                                </form>
+                                <h5>Mail us: <a href="mailto:info@projectmerlin.io">info@projectmerlin.io</a></h5>
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#tokenomics">Token</a></li>
+                                    <li><a href="https://docs.projectmerlin.io/projectmerlin">Docs</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="/articles">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="footer-shape">
-                    <img
-                        src="../assets/images/crypto-token/footer-shape.png"
-                        alt="img"
-                    />
                 </div>
             </div>
         </FooterStyle>

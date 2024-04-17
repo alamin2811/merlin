@@ -4,7 +4,7 @@ import SectionTitle from 'src/Components/SectionTitle/SectionTitle'
 
 const AboutMerlin = () => {
   return (
-    <AboutMerlinStyle className="about-marlin-section">
+    <AboutMerlinStyle className="about-marlin-section" id="about">
         <div className="container">
             <div className="about-marlin-content">
                 <div className="row">

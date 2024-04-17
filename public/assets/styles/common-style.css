@@ -294,11 +294,8 @@ button {
     padding-right: 0 !important;
   }
   .custom-container {
-    max-width: 1370px !important;
-    margin: auto;
-  }
-  .marketplace-container {
-    max-width: 1411px !important;
+    max-width: 1450px !important;
+    padding: 0px 20px;
     margin: auto;
   }
 }
