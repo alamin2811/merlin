@@ -120,8 +120,16 @@ const TokenPartnersStyle = styled.div`
     .green-shape{
         position: absolute;
         z-index: 0;
-        left: 20%;
-        top: 20%;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 

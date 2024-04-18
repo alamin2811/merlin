@@ -48,11 +48,10 @@ overflow: hidden;
     overflow: hidden;
 
     .overlay {
-        background: url(../assets/images/crypto-token/grain-texture.png);
-        
+        /* background: url(../assets/images/crypto-token/grain-texture.png);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
         height: 100%;
         padding-top: 200px;
         padding-bottom: 91px;
