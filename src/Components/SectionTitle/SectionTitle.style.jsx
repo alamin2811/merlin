@@ -32,6 +32,16 @@ const SectionTitleStyleWrapper = styled.div`
       font-size: 40px;
     }
   }
+  @media screen and (max-width: 768px){
+    .title{
+      font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 540px){
+    .title{
+      font-size: 30px;
+    }
+  }
 `;
 
 export default SectionTitleStyleWrapper;

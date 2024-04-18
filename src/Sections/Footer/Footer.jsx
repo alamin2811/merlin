@@ -38,40 +38,10 @@ const Footer = () => {
     }, []);
     return (
         <FooterStyle className='footer-section'>
-            <div className="contianer custom-container">
+            <div className="container custom-container">
                 <div className="footer-content">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <div className="footer-left">
-                                <h3>Project Merlin</h3>
-                                <p>Project Merlin is a next-generation crowdfunding DAO ecosystem. Our community supports the production of values that benefit the ecosystem, while also earning rewards through a unique vote2earn mechanism.</p>
-                                <ul>
-                                    <li><a href="#"><img src="./assets/images/icons/telegram.svg" alt="icon" /></a></li>
-                                    <li><a href="#"><img src="./assets/images/icons/in.svg" alt="icon" /></a></li>
-                                    <li><a href="#"><img src="./assets/images/icons/discord.svg" alt="icon" /></a></li>
-                                    <li><a href="#"><img src="./assets/images/icons/x.svg" alt="icon" /></a></li>
-                                </ul>
-                                <ol>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Cookies Policy</a></li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="footer-center">
-                                <a href="#" className='join-discord-btn home-banner-btn btn-hov-effect'>
-                                    <span className="btn-inner">
-                                        <span className="btn-normal-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
-                                        <span className="btn-hover-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
-                                    </span>
-                                </a>
-                                <a href="#" className="back-to-top">
-                                    Back to top <img src="../assets/images/icons/back-top-icon.svg" alt="" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
+                    <div className="row flex-row-reverse">
+                        <div className="col-lg-4">
                             <div className="footer-right">
                                 <h4>Stay connected & Get Updates</h4>
                                 <p>Sign up with your email address to receive news and updates</p>
@@ -93,6 +63,36 @@ const Footer = () => {
                                     <li><a href="#faq">FAQ</a></li>
                                     <li><a href="/articles">Articles</a></li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="footer-center">
+                                <a href="#" className='join-discord-btn home-banner-btn btn-hov-effect'>
+                                    <span className="btn-inner">
+                                        <span className="btn-normal-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
+                                        <span className="btn-hover-text"><img src="./assets/images/icons/discord.svg" alt="icon" /> JOIN DISCORD</span>
+                                    </span>
+                                </a>
+                                <a href="#" className="back-to-top">
+                                    Back to top <img src="../assets/images/icons/back-top-icon.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="footer-left">
+                                <h3>Project Merlin</h3>
+                                <p>Project Merlin is a next-generation crowdfunding DAO ecosystem. Our community supports the production of values that benefit the ecosystem, while also earning rewards through a unique vote2earn mechanism.</p>
+                                <ul>
+                                    <li><a href="#"><img src="./assets/images/icons/telegram.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/in.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/discord.svg" alt="icon" /></a></li>
+                                    <li><a href="#"><img src="./assets/images/icons/x.svg" alt="icon" /></a></li>
+                                </ul>
+                                <ol>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookies Policy</a></li>
+                                </ol>
                             </div>
                         </div>
                     </div>

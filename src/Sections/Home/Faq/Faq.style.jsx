@@ -80,10 +80,27 @@ const FaqStyle = styled.div`
         
     }
     @media screen and (max-width: 991px){
-        
+        padding-bottom: 80px;
     }
     @media screen and (max-width: 768px){
-        
+        padding-top: 30px;
+        padding-bottom: 20px;
+        .accordion-container {
+            .ac {
+                button{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px){
+        .accordion-container {
+            .ac {
+                button{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 `;
 

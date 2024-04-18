@@ -378,8 +378,7 @@ overflow: hidden;
         }
     }
     .banner-img{
-        max-width: 300px;
-        top: 0px;
+        top: -25%;
         .coin-img{
             max-width: 140px;
         }
@@ -416,6 +415,12 @@ overflow: hidden;
             }
         }
     }
+    .banner-img{
+        top: -15%;
+        .coin-img{
+            max-width: 120px;
+        }
+    }
 }
 @media screen and (max-width: 575px){
     .home-banner-text {
@@ -447,6 +452,9 @@ overflow: hidden;
                 }
             }
         }
+    }
+    .banner-img{
+        top: -10%;
     }
 }
 @media screen and (max-width: 425px){

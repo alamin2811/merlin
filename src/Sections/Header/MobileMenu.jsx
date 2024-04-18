@@ -43,23 +43,35 @@ const MobileMenu = () => {
                 >
                     <a href="/" className='mobile-logo'><img src="../assets/images/logo/logo.svg" alt="ilogo" /></a>
                     <List>
-                        <ListItem button>
-                            <ListItemText primary="Home" />
+                        <ListItem>
+                            <a href="#home" className="menu-link">
+                                <ListItemText primary="Home" />
+                            </a>
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Token" />
+                        <ListItem>
+                            <a href="#tokenomics" className="menu-link">
+                                <ListItemText primary="Token" />
+                            </a>
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Docs" />
+                        <ListItem>
+                            <a href="https://docs.projectmerlin.io/projectmerlin" className="menu-link">
+                                <ListItemText primary="Docs" />
+                            </a>
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="About" />
+                        <ListItem>
+                            <a href="/about" className="menu-link">
+                                <ListItemText primary="About" />
+                            </a>
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="FAQ" />
+                        <ListItem>
+                            <a href="#faq" className="menu-link">
+                                <ListItemText primary="FAQ" />
+                            </a>
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="Articles" />
+                        <ListItem>
+                            <a href="/articles" className="menu-link">
+                                <ListItemText primary="Articles" />
+                            </a>
                         </ListItem>
                     </List>
                     <IconButton
@@ -69,13 +81,12 @@ const MobileMenu = () => {
                         <CloseIcon />
                     </IconButton>
                     <a href="#" className="bg-white-btn btn-hov-effect dark">
-                                                    <span className="btn-inner">
-                                                        <span className="btn-normal-text">Launch App</span>
-                                                        <span className="btn-hover-text">Launch App</span>
-                                                    </span>
-                                                    <span className="round-shape" />
-                                                </a>
-
+                        <span className="btn-inner">
+                            <span className="btn-normal-text">Launch App</span>
+                            <span className="btn-hover-text">Launch App</span>
+                        </span>
+                        <span className="round-shape" />
+                    </a>
                 </div>
             </Drawer>
         </div>

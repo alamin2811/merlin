@@ -58,6 +58,7 @@ margin-top: -220px;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    row-gap: 0px;
     flex-wrap: wrap;
     li{
       a{
@@ -196,7 +197,9 @@ margin-top: -220px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
+    row-gap: 0px;
     li{
       a{
         color: #FFF;
@@ -210,20 +213,139 @@ margin-top: -220px;
   }
 }
 
+@media screen and (max-width: 1480px){
+  padding-bottom: 30px;
+  .footer-left{
+    p{
+      font-size: 14px;
+    }
+    ul{
+      margin-bottom: 20px;
+    }
+    ol{
+      gap: 15px;
+      row-gap: 0px;
+      li{
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footer-right{
+    h5{
+      margin-bottom: 30px;
+    }
+    ul{
+      li{
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footer-center {
+    .join-discord-btn{
+      margin-top: 132px;
+    }
+    .back-to-top{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 1400px){
+  .footer-left {
+    p{
+      margin-bottom: 15px;
+    }
+    h3{
+      margin-bottom: 0px;
+    }
+  }
+}
 @media screen and (max-width: 1199px){
-  
+  .footer-left{
+    h3{
+      font-size: 30px;
+    }
+    ul{
+      li{
+        a{
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+  .footer-center {
+    .join-discord-btn{
+      height: 55px;
+      width: 200px;
+    }
+  } 
+  .footer-right {
+    form{
+      input{
+        font-size: 16px;
+      }
+      button {
+        height: 40px;
+        min-width: 110px !important;
+        max-width: 110px !important;
+        font-size: 14px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 991px){
-  
-}
-@media screen and (max-width: 768px){
-  
-}
-@media screen and (max-width: 575px){
-  
+  .footer-content{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+    .footer-right{
+      text-align: center;
+      h4{
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      p{
+        margin: auto;
+        margin-bottom: 15px;
+      }
+      form{
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+      ul{
+        justify-content: center;
+      }
+    }
+    .footer-left{
+      max-width: 400px;
+      margin: auto;
+      margin-top: 30px;
+      text-align: center;
+      ul, ol{
+        justify-content: center;
+      }
+    }
+
+    .footer-center {
+      .join-discord-btn{
+        margin: 0px;
+        position: absolute;
+        top: 10px;
+    }
+      .back-to-top{
+          position: absolute;
+          bottom: 0px;
+      }
+    }
 }
 @media screen and (max-width: 480px){
-  
+  margin-top: -33%;
 }
 
 `;

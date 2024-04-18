@@ -2,27 +2,6 @@ import styled from "styled-components";
 
 const EcoSystemStyle = styled.div`
     position: relative;
-    /* &::before{
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        z-index: 4;
-        bottom: 225px;
-        left: 0px;
-        background: linear-gradient(90deg, rgba(13, 16, 20, 0) 0%, rgba(55, 234, 142, 0.5) 51.56%, rgba(13, 16, 20, 0) 100%);
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        height: 287px;
-        width: 100%;
-        z-index: 3;
-        bottom: -60px;
-        left: 0px;
-        background: rgba(13, 16, 20, 0.7);
-        backdrop-filter: blur(40px);
-    } */
     p{
         font-size: 16px;
         line-height: 200%;
@@ -114,13 +93,13 @@ const EcoSystemStyle = styled.div`
         .cloud2{
             position: absolute;
             top: 150px;
-            left: -27px;
+            left: -350px;
             z-index: 2;
         }
         .cloud3{
             position: absolute;
             top: 72px;
-            right: -47px;
+            right: -350px;
             z-index: 2;
         }
         .cloud4{
@@ -241,9 +220,6 @@ const EcoSystemStyle = styled.div`
             padding-right: 80px;
             text-align: right;
         }
-    }
-    .ecosystem-content{
-        overflow: hidden;
     }
     .eco-line-pc {
         display: none;
