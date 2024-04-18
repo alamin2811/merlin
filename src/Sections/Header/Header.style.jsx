@@ -957,15 +957,17 @@ const HeaderStyleWrapper = styled.header`
       li{
         margin-bottom: 30px;
         .menu-link{
-          color: #FFF;
-          text-align: right;
-          text-decoration: none;
-          font-family: Quantico;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          text-transform: uppercase;
+          a{
+            color: #FFF;
+            text-align: right;
+            text-decoration: none;
+            font-family: Quantico;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+          }
         }
       }
     }
