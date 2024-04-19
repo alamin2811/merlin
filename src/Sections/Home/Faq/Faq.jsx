@@ -8,7 +8,7 @@ const FaqSection = () => {
             id: 1,
             title: 'What distinguishes Project Merlin from other DAO projects and why do you call it DAO v2?',
             content: 'We are an innovative WEB3 project operating as a DAO. There are no other DAO projects that have functioned in this manner before. We are pioneering a new era in the industry, introducing a next-generation DAO ecosystem where the community plays a more active role. A future where proposals are not limited to three options, and the authority to create proposals is not concentrated within a specific minority. The governance system introduced by Project Merlin places the entire authority for proposal creation, candidate selection, and candidate voting, for the first time, entirely under the control of the community. This is why we refer to it as DAO v2. Furthermore, for the first time in a DAO project, the opportunity for the community to earn rewards is diversified to such an extent. An innovative project that combines Vote2Earn, Gamification, and Staking opportunities.',
-            isOpen: false,
+            isOpen: true,
             icon: ''
         },
         {
@@ -47,8 +47,11 @@ const FaqSection = () => {
         setAccordions(accordions.map(accordion => {
             if (accordion.id === accordionId) {
                 return { ...accordion, isOpen: !accordion.isOpen };
-            } else {
+            } else if (accordion.id === 1 && accordion.isOpen) {
+                // Close the first accordion if it's open and not the one being clicked
                 return { ...accordion, isOpen: false };
+            } else {
+                return accordion;
             }
         }));
     };

@@ -120,6 +120,7 @@ const HeaderStyleWrapper = styled.header`
     display: flex;
     align-items: center;
     gap: 60px;
+    transform: translateY(-5px);
   }
 
   .header-logo {

@@ -4,7 +4,7 @@ const BannerStyle = styled.div`
 overflow: hidden;
     .home-banner-shape{
         position: absolute;
-        top: 15px;
+        top: 20px;
         left: 0px;
         width: 100%;
         z-index: 0;
