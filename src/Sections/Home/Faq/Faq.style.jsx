@@ -26,6 +26,7 @@ const FaqStyle = styled.div`
                     top: 0px;
                     border-radius: 20px 0px 0px 20px;
                     background: linear-gradient(90deg, rgba(18, 207, 167, 0.10) 0%, rgba(18, 207, 167, 0.00) 100%);
+                    z-index: 0;
                 }
                 &::after{
                     content: '';
@@ -36,6 +37,7 @@ const FaqStyle = styled.div`
                     top: 0px;
                     border-radius: 0px 20px 20px 0px;
                     background: linear-gradient(90deg, rgba(18, 207, 167, 0.00) 0%, rgba(18, 207, 167, 0.10) 100%);
+                    z-index: 0;
                 }
             }
             h2{
@@ -56,6 +58,8 @@ const FaqStyle = styled.div`
                 gap: 20px;
                 text-align: left;
                 width: 100%;
+                position: relative;
+                    z-index: 1;
                 img{
                     min-width: 18px;
                 }
