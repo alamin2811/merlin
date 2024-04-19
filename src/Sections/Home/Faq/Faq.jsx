@@ -48,7 +48,7 @@ const FaqSection = () => {
             if (accordion.id === accordionId) {
                 return { ...accordion, isOpen: !accordion.isOpen };
             } else {
-                return accordion;
+                return { ...accordion, isOpen: false };
             }
         }));
     };
