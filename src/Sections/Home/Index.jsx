@@ -7,8 +7,6 @@ import KeyPoints from './KeyPoints/KeyPoints'
 import TokenTag from './TokenTag/TokenTag'
 import TokenPartners from './TokenPartners/TokenPartners'
 import EcoSystem from './EcoSystem/EcoSystem'
-import GetUpdates from './GetUpdates/GetUpdates'
-import TokenSocial from './TokenSocial/TokenSocial'
 import Footer from '../Footer/Footer'
 import FaqSection from './Faq/Faq'
 

@@ -2,23 +2,6 @@ import React, { useState, useEffect } from 'react';
 import TokenTagStyle from './TokenTag.style';
 import { tagsData } from 'public/assets/data/CryptoTokenData/TokenTag';
 
-// const tagsData = [
-//     { label: 'Metaverse', className: 'tag skyblue' },
-//     { label: 'DeFi', className: 'tag skyblue2' },
-//     { label: 'Wallet', className: 'tag offwhite' },
-//     { label: 'Blockchain', className: 'tag skyblue3' },
-//     { label: 'Apps', className: 'tag pink' },
-//     { label: 'Ecosystem', className: 'tag yellow' },
-//     { label: 'NFTs', className: 'tag offwhite' },
-//     { label: 'dApp', className: 'tag yellowgreen' },
-//     { label: 'Digital', className: 'tag offwhite' },
-//     { label: 'Digital', className: 'tag skyblue2' },
-//     { label: 'DeFi', className: 'tag skyblue2' },
-//     { label: 'Wallet', className: 'tag offwhite' },
-//     { label: 'Metaverse', className: 'tag skyblue' },
-//     { label: 'DeFi', className: 'tag skyblue2' },
-//     { label: 'Wallet', className: 'tag offwhite' },
-// ];
 
 const TokenTag = () => {
     const [visibleTags, setVisibleTags] = useState([]);
@@ -33,6 +16,17 @@ const TokenTag = () => {
             setVisibleTags(newTags);
         };
 
+        const handleScroll = () => {
+            // Check if user has scrolled to the bottom
+            if (
+                window.innerHeight + document.documentElement.scrollTop ===
+                document.documentElement.offsetHeight
+            ) {
+                // Load more tags
+                loadMoreTags();
+            }
+        };
+
         // Load more tags when component mounts
         loadMoreTags();
 
@@ -43,17 +37,6 @@ const TokenTag = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [visibleTags]);
-
-    const handleScroll = () => {
-        // Check if user has scrolled to the bottom
-        if (
-            window.innerHeight + document.documentElement.scrollTop ===
-            document.documentElement.offsetHeight
-        ) {
-            // Load more tags
-            loadMoreTags();
-        }
-    };
 
     return (
         <TokenTagStyle className="crypto-token-tag-section">

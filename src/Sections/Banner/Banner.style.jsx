@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const BannerStyle = styled.div`
 overflow: hidden;
+position: relative;
     .home-banner-shape{
         position: absolute;
         top: 20px;

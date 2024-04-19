@@ -49,6 +49,7 @@ const Banner = () => {
 
     return (
         <BannerStyle className="home-banner" id="home">
+            <BannerBgAnimetion/>
             <div className="home-banner-shape">
                 <div className="ractangle" />
                 <div className="ractangle" />
@@ -61,7 +62,6 @@ const Banner = () => {
             </div>
             <div className="home-banner-inner">
                 <div className="overlay">
-                    <BannerBgAnimetion/>
                     <div className="container custom-container">
                         <div className="home-banner-text">
                             <h1 className="quantico" data-splitting="">
