@@ -47,9 +47,6 @@ const FaqSection = () => {
         setAccordions(accordions.map(accordion => {
             if (accordion.id === accordionId) {
                 return { ...accordion, isOpen: !accordion.isOpen };
-            } else if (accordion.id === 1 && accordion.isOpen) {
-                // Close the first accordion if it's open and not the one being clicked
-                return { ...accordion, isOpen: false };
             } else {
                 return accordion;
             }
