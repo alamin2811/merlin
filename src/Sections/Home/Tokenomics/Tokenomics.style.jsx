@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const EcoSystemStyle = styled.div`
+const TokenomicsStyle = styled.div`
     position: relative;
     p{
         font-size: 16px;
@@ -13,7 +13,7 @@ const EcoSystemStyle = styled.div`
         margin-bottom: 55px;
     }
 
-.ecosystem-text {
+.tokenomics-text {
     ul {
         display: flex;
         align-items: center;
@@ -45,7 +45,7 @@ const EcoSystemStyle = styled.div`
         }
     }
 }
-.ecosystem-content{
+.tokenomics-content{
     max-width: 944px;
     margin: auto;
     text-align: center;
@@ -149,7 +149,7 @@ const EcoSystemStyle = styled.div`
 }
 
 @media screen and (max-width: 1199px){
-    .ecosystem-content{
+    .tokenomics-content{
         max-width: 755px;
     }
 }
@@ -157,14 +157,14 @@ const EcoSystemStyle = styled.div`
     p{
         font-size: 14px; 
     }
-    .ecosystem-text {
+    .tokenomics-text {
         ul{
             li{
                 font-size: 13px;
             }
         }
     }
-    .ecosystem-content{
+    .tokenomics-content{
         max-width: 560px;
     }
 }
@@ -174,7 +174,7 @@ const EcoSystemStyle = styled.div`
             font-size: 16px;
             margin-bottom: 30px;
         }
-    .ecosystem-text {
+    .tokenomics-text {
         ul{
             flex-wrap: wrap;
             justify-content: center;
@@ -205,13 +205,13 @@ const EcoSystemStyle = styled.div`
     .defi-launchapp-btn{
         margin-bottom: 50px;
     }
-    .ecosystem-text{
+    .tokenomics-text{
         margin-bottom: -100px;
         position: relative;
         z-index: 1;
     }
     
-    .ecosystem-text ul li{
+    .tokenomics-text ul li{
         &:nth-child(3){
             padding-left: 80px;
             text-align: left;
@@ -234,7 +234,7 @@ const EcoSystemStyle = styled.div`
 }
 @media screen and (max-width: 575px){
     /*-- defi index start --*/
-    .ecosystem-text ul{
+    .tokenomics-text ul{
         margin: 0px -20px;
         margin-bottom: 40px;
         li{
@@ -256,18 +256,18 @@ const EcoSystemStyle = styled.div`
         &::before{
             bottom: 140px;
         }
-        .ecosystem-content {
+        .tokenomics-content {
             .logo-icon{
                 bottom: 4%;
             }
         }
 }
 @media screen and (max-width: 375px){
-    .ecosystem-text ul li{
+    .tokenomics-text ul li{
         
     }
 }
 
 `;
 
-export default EcoSystemStyle;
+export default TokenomicsStyle;

@@ -1,45 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import TokenTagStyle from './TokenTag.style';
+import React, { useState, useEffect, useRef } from 'react';
 import { tagsData } from 'public/assets/data/CryptoTokenData/TokenTag';
-
+import TokenTagStyle from './TokenTag.style';
 
 const TokenTag = () => {
     const [visibleTags, setVisibleTags] = useState([]);
+    const containerRef = useRef(null);
 
     useEffect(() => {
-        const loadMoreTags = () => {
-            // For demonstration, let's load 10 tags at a time
-            const newTags = [...visibleTags];
-            for (let i = 0; i < 10; i++) {
-                newTags.push(tagsData[i % tagsData.length]); // Cycle through tagsData
-            }
-            setVisibleTags(newTags);
-        };
-
         const handleScroll = () => {
-            // Check if user has scrolled to the bottom
             if (
-                window.innerHeight + document.documentElement.scrollTop ===
-                document.documentElement.offsetHeight
+                containerRef.current &&
+                containerRef.current.getBoundingClientRect().bottom <= window.innerHeight
             ) {
-                // Load more tags
+                // User has scrolled to the bottom
                 loadMoreTags();
             }
         };
 
-        // Load more tags when component mounts
-        loadMoreTags();
-
-        // Add event listener for scrolling to load more tags
         window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [visibleTags]);
+    }, [visibleTags]); // Trigger on visibleTags change to load more tags
+
+    const loadMoreTags = () => {
+        const newTags = [];
+        for (let i = 0; i < 10; i++) {
+            newTags.push(tagsData[(visibleTags.length + i) % tagsData.length]);
+        }
+        setVisibleTags(prevTags => [...prevTags, ...newTags]);
+    };
+
+    useEffect(() => {
+        // Load initial set of tags
+        loadMoreTags();
+    }, []); // Trigger only once on component mount
 
     return (
-        <TokenTagStyle className="crypto-token-tag-section">
+        <TokenTagStyle ref={containerRef} className="crypto-token-tag-section">
             <div className="crypto-token-tag-inner">
                 <div className="crypto-token-tag-list">
                     {visibleTags.map((tag, index) => (

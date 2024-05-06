@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import EcoSystemStyle from './EcoSystem.style';
+import TokenomicsStyle from './Tokenomics.style';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 
-const EcoSystem = () => {
+const Tokenomics = () => {
   const cloud3Ref = useRef(null);
   const cloud2Ref = useRef(null);
   const globeRef = useRef(null);
@@ -39,7 +39,7 @@ const EcoSystem = () => {
   }, []);
 
   return (
-    <EcoSystemStyle className="ecosystem-section">
+    <TokenomicsStyle className="tokenomics-section" id='tokenomics'>
       <div className="container">
         <SectionTitle
           title="Community-focused Tokenomics"
@@ -63,7 +63,7 @@ const EcoSystem = () => {
           <img src="../assets/images/crypto-token/arrow-right-white.svg" alt="icon" />
           <span className="round-shape" />
         </a>
-        <div className="ecosystem-text">
+        <div className="tokenomics-text">
           <ul>
             <li>
               MRLN <br />
@@ -84,7 +84,7 @@ const EcoSystem = () => {
             </li>
           </ul>
         </div>
-        <div className="ecosystem-content">
+        <div className="tokenomics-content">
           <img src="../assets/images/logo/fevicon.svg" alt="img" className="logo-icon" />
           <div className="eco-line">
             <img src="../assets/images/defi/eco-lines.svg" alt="img" className="eco-line-pc" />
@@ -99,8 +99,8 @@ const EcoSystem = () => {
           </div>
         </div>
       </div>
-    </EcoSystemStyle>
+    </TokenomicsStyle>
   );
 };
 
-export default EcoSystem;
+export default Tokenomics;

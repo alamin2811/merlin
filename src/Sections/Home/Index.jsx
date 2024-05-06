@@ -6,7 +6,7 @@ import AboutMerlin from './AboutMerlin/AboutMerlin'
 import KeyPoints from './KeyPoints/KeyPoints'
 import TokenTag from './TokenTag/TokenTag'
 import TokenPartners from './TokenPartners/TokenPartners'
-import EcoSystem from './EcoSystem/EcoSystem'
+import Tokenomics from './Tokenomics/Tokenomics'
 import Footer from '../Footer/Footer'
 import FaqSection from './Faq/Faq'
 
@@ -21,7 +21,7 @@ const Home = () => {
         <TokenTag/>
         <TokenPartners/>
         <FaqSection/>
-        <EcoSystem/>
+        <Tokenomics/>
         <Footer/>
     </div>
   )
