@@ -57,6 +57,15 @@ const TokenTag = () => {
                             </a>
                         ))}
                 </div>
+                <div className="crypto-token-tag-list">
+                    {loading && <div>Loading...</div>}
+                    {!loading &&
+                        visibleTags.map((tag, index) => (
+                            <a key={index} href="#" className={tag.className}>
+                                {tag.label}
+                            </a>
+                        ))}
+                </div>
             </div>
         </TokenTagStyle>
     );
