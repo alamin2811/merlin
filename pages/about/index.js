@@ -1,10 +1,9 @@
 import React from 'react'
+import AboutUs from 'src/Sections/AboutUs/AboutUs'
 
 const AboutPage = () => {
   return (
-    <div>
-        <h1 style={{color: '#FFFFFF'}}>About us</h1>
-    </div>
+    <AboutUs/>
   )
 }
 
