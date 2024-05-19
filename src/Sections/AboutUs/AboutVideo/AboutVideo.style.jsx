@@ -26,7 +26,7 @@ const AboutVideoStyle = styled.div`
             top: 0;
             left: 0;
             width: 100%;
-            height: 98.5%;
+            height: 99%;
             .play-btn{
                 display: flex;
                 align-items: center;
