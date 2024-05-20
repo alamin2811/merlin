@@ -47,7 +47,7 @@ const AboutVideoStyle = styled.div`
     padding-bottom: 100px;
     .about-video-card{
         .video-overlay{
-            height: 98%;
+            height: 99%;
                 .play-btn{
                     height: 80px;
                     width: 80px;
@@ -62,7 +62,7 @@ const AboutVideoStyle = styled.div`
     padding-bottom: 70px;
     .about-video-card{
         .video-overlay{
-            height: 97%;
+            height: 98%;
                 .play-btn{
                     height: 60px;
                     width: 60px;
@@ -76,7 +76,7 @@ const AboutVideoStyle = styled.div`
     padding-bottom: 70px;
     .about-video-card{
         .video-overlay{
-            height: 96%;
+            height: 97%;
                 .play-btn{
                     height: 60px;
                     width: 60px;
