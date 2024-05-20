@@ -34,7 +34,7 @@ padding-bottom: 140px;
     h6{
         color: rgba(255, 255, 255, 0.80);
         font-family: Lexend;
-        font-weight: 400;
+        font-weight: 300 !important;
         text-align: center;
     }
     &.big-card{
