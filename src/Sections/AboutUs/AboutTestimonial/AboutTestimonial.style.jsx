@@ -95,6 +95,16 @@ const AboutTestimonialStyle = styled.div`
             position: absolute;
             left: 15%;
             bottom: 25px;
+            .icon{
+                height: 50px;
+                width: 50px;
+            }
+            h5{
+                font-size: 20px;
+            }
+            h6{
+                font-size: 15px;
+            }
         }
     }
     .about-testimonial-card {
@@ -105,6 +115,22 @@ const AboutTestimonialStyle = styled.div`
     }
 }
 
+@media screen and (max-width: 575px){
+    .about-testimonial-text{
+        .name{
+            .icon{
+                height: 40px;
+                width: 40px;
+            }
+            h5{
+                font-size: 18px;
+            }
+            h6{
+                font-size: 14px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 480px){
     .about-testimonial-text{
         width: 100%;
