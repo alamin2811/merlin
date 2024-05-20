@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import FooterGlobe from '../Footer/FooterGlobe'
 import AboutBanner from './AboutBanner/AboutBanner'
 import AboutVideo from './AboutVideo/AboutVideo';
 import MissionVision from './MissionVission/MissionVission';
 import AboutTestimonial from './AboutTestimonial/AboutTestimonial'
+import Team from './Team/Team'
 
 const AboutUs = () => {
   return (
@@ -15,21 +15,8 @@ const AboutUs = () => {
         <AboutVideo/>
         <MissionVision/>
         <AboutTestimonial/>
+        <Team/>
         
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br />
-        
-        <FooterGlobe/>
         <Footer/>
     </div>
   )
