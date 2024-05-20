@@ -30,6 +30,7 @@ padding-bottom: 140px;
         text-align: center;
         font-family: Quantico;
         font-weight: 700;
+        text-transform: uppercase;
     }
     h6{
         color: rgba(255, 255, 255, 0.80);
@@ -115,6 +116,24 @@ padding-bottom: 140px;
 }
 @media screen and (max-width: 991px){
     padding-top: 80px;
+    .team-card{
+        &.big-card {
+            h5{
+                font-size: 20px;
+            }
+            h6{
+                font-size: 16px;
+            }
+        }
+        &.small-card {
+            h5{
+                font-size: 18px;
+            }
+            h6{
+                font-size: 14px;
+            }
+        }
+    }
     .team-row{
         .team-col{
             width: 33.33%;
